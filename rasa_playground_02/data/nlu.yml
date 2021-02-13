@@ -1,0 +1,87 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - howdy
+
+
+- intent: bot_challenge
+  examples: |
+    - Are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - is this a chatbot?
+    - are you a bot?
+    - is this a real person?
+    - you're a bot, aren't you?
+
+- intent: subscribe  
+  examples: |
+    - I want to get the newsletter
+    - Can you send me the newsletter?
+    - Can you sign me up for the newsletter?
+    - Can I get on your mailing list?
+  
+- intent: inform
+  examples: |
+    - My email is example@example.com
+    - random@example.com
+    - Please send it to anything@example.com
+    - Email is something@example.com
+
+- intent: faq/ask_ml  
+  examples: |
+    - how can I get started in ml?
+    - what are some good resources for learning about deep learning?
+    - con you recommend machine learning stuff?
+    - how do you do machine learning?
+    - how should I do ML? 
+
+- intent: faq/ask_nlp
+  examples: |
+    - whats a good nlp course?
+    - how should I learn nlp?
+    - how can I get started in NLP?
+
+- intent: faq/ask_rasa_learn
+  examples: |
+    - how can i learn to build  a chatbot?
+    - how to make a chatbot?
+    - how to use rasa?
+    - I need help with Rasa
+
+
+- intent: faq/ask_mentor
+  examples: |
+    - can you be my mentor?
+    - do you mentor people?
+    - can you guide me?
+    - how can I be your student?
+
+- intent: faq/ask_kaggle
+  examples: |
+    - can you help me with Kaggle?
+    - how do I do kaggle competitions?
+    - how to start kaggling?
+    - what's kaggle?
+
+- intent: faq/ask_rasa
+  examples: |
+    - what's rasa?
+    - what can I do with rasa?
+    

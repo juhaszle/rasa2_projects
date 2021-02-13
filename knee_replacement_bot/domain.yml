@@ -1,0 +1,40 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- bot_challenge
+- faq
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_faq/bend_intact_leg_more_intent:
+  - image: https://i.ibb.co/HFtKS2P/strait-leg-raise-02.jpg
+    text: bend your good leg up more!
+  utter_faq/bend_intact_leg_less_intent:
+  - image: https://i.ibb.co/HFtKS2P/strait_leg_raise_02.jpg
+    text: bend your good leg up less!
+  utter_faq/raise_leg_higher_intent:
+  - image: https://i.ibb.co/HFtKS2P/strait_leg_raise_02.jpg
+    text: please raise your bad leg a bit higher!
+  utter_faq/raise_leg_lower_intent:
+  - image: https://i.ibb.co/NNBtQQb/strait_leg_raise_01.jpg
+    text: please raise your bad leg a bit lower!
+  utter_faq/not_bend_bad_leg_intent:
+  - image: https://i.ibb.co/NNBtQQb/strait_leg_raise_01.jpg
+    text: please don’t bend your bad leg, hold it straight!
+  utter_faq/hold_leg_longer_intent:
+  - image: https://i.ibb.co/NNBtQQb/strait_leg_raise_01.jpg
+    text: please hold your bad leg longer, 5 seconds long!
+  utter_faq/move_leg_slower_intent:
+  - image: https://i.ibb.co/NNBtQQb/strait_leg_raise_01.jpg
+    text: please lower your bad leg slower, cautiously!
+actions:
+- '...'
+- utter_greet
+- utter_iamabot

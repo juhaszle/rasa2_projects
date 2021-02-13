@@ -1,0 +1,14 @@
+version: "2.0"
+
+
+stories:
+  - story: greet 
+    steps:
+    - intent: greet
+    - action: utter_greet
+    
+
+  - story: are you a bot
+    steps:
+    - intent: bot_challenge
+    - action: utter_iam_a_bot

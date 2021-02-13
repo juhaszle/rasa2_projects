@@ -1,0 +1,39 @@
+version: "2.0"
+
+intents:
+  - greet
+  - inform
+  - subscribe 
+  - bot_challenge
+
+responses:  
+  utter_greet:
+  - text: "Hello! How can I help you?\n"
+  - text: "Hi\n"
+  utter_ask_email:
+  - text: "What is your email address?"
+  utter_subscribed:
+  - text: "I've subscribed {email} to the newsletter!"
+  - text: "You've been subscribed, the newsletter will be sent to {email}."
+  utter_iam_a_bot:
+  - text: "I am a bot, powered by Rasa."
+  
+actions:
+  - "..."
+  - utter_greet
+  - utter_subscribed
+  - utter_iam_a_bot
+
+slots:  
+  email: 
+    type: text
+    influence_conversation: false
+
+forms:
+  newsletter_form:
+     email:
+      - type: from_text
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

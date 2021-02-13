@@ -1,0 +1,36 @@
+version: "2.0"
+
+intents:
+  - greet
+  - inform  
+  - bot_challenge
+  - faq
+
+responses:  
+  utter_greet:
+  - text: "Hi! What questions do you have?"
+  utter_iam_a_bot:
+  - text: "I am a bot, powered by Rasa."
+  utter_faq/ask_ml:
+  - text: If you want to learn about machine learning in general, you yould try the fast.ai (https://www.fast.ai/) course or Kaggle learn (https://www.kaggle.com/learn/overview).
+  utter_faq/ask_nlp:
+  - text: I'd recommend the book Speech and Language Processing (https://web.stanford.edu/~jurafsky/slp3/) or TidyText Book (https://www.tidytextmining.com/)
+  utter_faq/ask_rasa_learn:
+  - text: There's a free Udemy course for getting started with Rasa (https://www.udemy.com/course/rasa-for-beginners/) or you can check out the Rasa Masterclass (https://info.rasa.com/masterclass)
+  utter_faq/ask_mentor:
+  - text: I don't have capacity to take on any mentees right now, sorry. If you hava a quick question you you can reach out me on Twitter (@rctatman) or ak on the Rasa or Kaggle forums. 
+  utter_faq/ask_kaggle:
+  - text: The best place for questions about Kaggle is the Kaggle forums (https://www.kaggle.com/discussion) or you could try KaggleNoobs.
+  utter_faq/ask_rasa:
+  - text: Rasa is a software company that builds (mostly) free and open source tools to help make, maintain and improve chatbots.
+
+actions:
+  - "..."
+  - utter_greet  
+  - utter_iam_a_bot
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

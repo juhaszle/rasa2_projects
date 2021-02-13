@@ -1,0 +1,62 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: faq/bend_intact_leg_more_intent
+  examples: |
+    - intact leg: less bending
+- intent: faq/bend_intact_leg_less_intent
+  examples: |
+    - intact leg: more bending
+- intent: faq/raise_leg_higher_intent
+  examples: |
+    - affected leg: higher
+- intent: faq/raise_leg_lower_intent
+  examples: |
+    - affected leg: lower
+- intent: faq/not_bend_bad_leg_intent
+  examples: |
+    - affected leg: no bend
+- intent: faq/hold_leg_longer_intent
+  examples: |
+    - affected leg: hold longer
+- intent: faq/move_leg_slower_intent
+  examples: |
+    - affected leg: move slower
